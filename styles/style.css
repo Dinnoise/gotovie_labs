@@ -1,0 +1,397 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body nav ul img {
+    margin: 5px;
+    margin-right: 10px;
+}
+
+header {
+    background-color: #cee2ff;
+    padding: 10px 0;
+}
+
+nav {
+    
+    
+    background-color: #CEE2FF;
+
+}
+
+nav ul {
+
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    
+}
+
+nav ul li {
+    display: grid;
+    margin: 5px;
+    padding: 15px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.hero {
+    width: 1664px;
+    height: 399px;
+    border-radius: 15px; /* Закругление углов */
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 64px auto;
+    box-shadow: 1px 1px 3px #999999;
+}
+
+.hero img {
+ 
+    height: auto;
+    width: 100%; /* Растянуть изображение по ширине */
+    display: block;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 128px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.text-overlay {
+    position: absolute;
+    color: white; /* Цвет текста */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Тень для читаемости */
+    font-size: 24px; /* Размер текста */
+    font-weight: bold; /* Жирный текст */
+
+}
+
+.text-overlay h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 87px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: #FFFFFF;
+    
+}
+
+.text-overlay h1 p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+}
+
+.why-choose-us {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+.why-choose-us h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 64px;
+    gap: 20px;
+}
+
+.feature {
+    flex: 1;
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.feature h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Секция "Широкий выбор полезных для здоровья ягод" */
+.product-selection {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.product-selection h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.product-selection p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    padding-left: 64px;
+    padding-right: 64px;
+}
+
+.product {
+    flex: 1;
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.image {
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product p {
+    text-underline-offset: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* --------------------------- */
+
+
+h1 {
+    margin: 64px;
+    font-size: 40px;
+    text-align: center;
+}
+
+/* Поиск */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 60%;
+    gap: 10px;
+}
+
+.search-bar input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #45a049;
+}
+
+/* Сетка товаров */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 50px;
+    padding: 20px;
+    justify-items: center;
+    margin: 64px;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    width: 250px;
+    height: 280px;
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 10px;
+}
+
+.card-buttons button {
+    flex: 1;
+    padding: 8px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.card-buttons button:hover {
+    background-color: #45a049;
+}
+
+/* Пагинация */
+.pagination {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.pagination a {
+    margin: 0 5px;
+    padding: 8px 12px;
+    background-color: #CEE2FF;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #ACCBFF;
+}
+
+.product-price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.quantity-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.quantity-container input {
+    width: 50px;
+    padding: 5px;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+
+
+footer {
+    background-color: #CEE2FF;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin: 0 64px;
+}
+
+.footer-section {
+    flex: 1;
+    text-align: left;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+

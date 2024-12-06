@@ -1,0 +1,249 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body nav ul img {
+    margin: 5px;
+    margin-right: 10px;
+}
+
+header {
+    background-color: #cee2ff;
+    padding: 10px 0;
+}
+
+nav {
+    
+    
+    background-color: #CEE2FF;
+
+}
+
+nav ul {
+
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    
+}
+
+nav ul li {
+    display: grid;
+    margin: 5px;
+    padding: 15px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+/* Секция товара */
+.product-page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-image img {
+    max-width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-details {
+    flex: 1;
+}
+
+.product-details h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.product-details p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.product-price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.product-price span {
+    font-size: 16px;
+    color: #888;
+}
+
+/* Секция количества товара */
+.quantity-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.quantity-container label {
+    font-size: 16px;
+    color: #333;
+    margin-right: 5px;
+}
+
+.quantity-container input {
+    width: 60px;
+    padding: 6px;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+}
+
+.quantity-container input:focus {
+    outline: none;
+    border-color: #0073e6;
+}
+
+/* Кнопка "Добавить в корзину" */
+.add-to-cart {
+    display: inline-block;
+    background-color: #0073e6;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #005bb5;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modal {
+    display: none; /* Скрываем по умолчанию */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Прозрачный черный фон */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-content h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.modal-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.close-modal {
+    background-color: #e74c3c;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    transition: background-color 0.3s;
+}
+
+.close-modal:hover {
+    background-color: #c0392b;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+footer {
+    background-color: #CEE2FF;
+    padding: 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin: 0 64px;
+}
+
+.footer-section {
+    flex: 1;
+    text-align: left;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+
